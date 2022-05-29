@@ -9,14 +9,12 @@ namespace UI
         //start new game
         public void NewGame()
         {
-            Debug.Log("clicked");
             SceneManager.LoadScene(1);
         }
  
         //Quit Game
         public void ExitGame()
         {
-            Debug.Log("clicked");
             Application.Quit();
         }
     }

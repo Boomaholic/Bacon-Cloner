@@ -46,5 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piggie: {fileID: 8592108986209056533, guid: 85d3c46b585134a4ead6eb90e924f3fb, type: 3}
   hungryDude: {fileID: 8846117609624025408, guid: bd0f9309c36cb044998d7950ec798d63, type: 3}
-  eating: {fileID: 5415955743926007779, guid: 29447fffefcc2cf4480f71de5cf41602, type: 3}
-  imHungry: {fileID: 1831022817021083400, guid: e5397c71b9b80734b9a78949ad436ff6, type: 3}
+  hungrySpawnlimit: 3

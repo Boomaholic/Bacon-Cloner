@@ -227,7 +227,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3170950949948585816, guid: b30afbcb03ddb4049af89fda09966da9, type: 3}
       propertyPath: pickupTimeWaited
-      value: 1
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170950949948585816, guid: b30afbcb03ddb4049af89fda09966da9, type: 3}
+      propertyPath: piggieRespawnDelay
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3170950949948585816, guid: b30afbcb03ddb4049af89fda09966da9, type: 3}
       propertyPath: piggieSpawnedCount
@@ -278,15 +282,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2627089147953215020, guid: cb19f3a025df7d842bb95ee5d59874a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2627089147953215020, guid: cb19f3a025df7d842bb95ee5d59874a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15.68
       objectReference: {fileID: 0}
     - target: {fileID: 2627089147953215020, guid: cb19f3a025df7d842bb95ee5d59874a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2627089147953215020, guid: cb19f3a025df7d842bb95ee5d59874a8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -328,3 +332,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2627089147953215020, guid: cb19f3a025df7d842bb95ee5d59874a8, type: 3}
   m_PrefabInstance: {fileID: 9032659268677812662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6426416861220878235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2627089147953215021, guid: cb19f3a025df7d842bb95ee5d59874a8, type: 3}
+  m_PrefabInstance: {fileID: 9032659268677812662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &941266315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426416861220878235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 115.6, y: 33.87, z: 62.56}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &941266316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426416861220878235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6914c3c9b03d6140a367f93a04cc881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

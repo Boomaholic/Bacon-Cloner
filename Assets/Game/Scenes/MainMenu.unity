@@ -431,7 +431,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49730
+  m_Name: pb_Mesh-112600
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -760,7 +760,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49728
+  m_Name: pb_Mesh-112870
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -925,7 +925,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49694
+  m_Name: pb_Mesh-112612
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1090,7 +1090,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49772
+  m_Name: pb_Mesh-112588
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2096,7 +2096,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49604
+  m_Name: pb_Mesh-112670
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2290,8 +2290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.57, y: -27.2}
-  m_SizeDelta: {x: 258.28, y: 271.42}
+  m_AnchoredPosition: {x: 12.51, y: -27.6}
+  m_SizeDelta: {x: 252.81, y: 271.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &619030193
 MonoBehaviour:
@@ -2313,7 +2313,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Booma\n\nWhoops!\nthere will be \nothers here\n"
+  m_text: "haha no credits here just \n\na giant THANK YOU to the GDTV discord community
+    for all the Feedback and support during my first Jam!\n\nalso my buddy Blaze
+    for streaming his playtest and having a laugh at all the bugs."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2340,8 +2342,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 19.2
+  m_fontSizeBase: 19.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2484,7 +2486,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49580
+  m_Name: pb_Mesh-112894
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2908,7 +2910,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49494
+  m_Name: pb_Mesh-112624
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3346,7 +3348,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49824
+  m_Name: pb_Mesh-112576
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4140,7 +4142,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49582
+  m_Name: pb_Mesh-112816
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4823,7 +4825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72.6, y: -28.9}
+  m_AnchoredPosition: {x: -71.8, y: -37.5}
   m_SizeDelta: {x: 104.9233, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482689872
@@ -4846,9 +4848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'W
-
-    A,D
+  m_text: 'WASD
 
     Mouse
 
@@ -4881,8 +4881,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 29
+  m_fontSizeBase: 29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5153,7 +5153,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49812
+  m_Name: pb_Mesh-112804
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5822,7 +5822,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50052
+  m_Name: pb_Mesh-112882
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -6542,7 +6542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.861694, y: -28.899994}
+  m_AnchoredPosition: {x: 55.66169, y: -37.499996}
   m_SizeDelta: {x: 150, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2084908514
@@ -6565,9 +6565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Forward
-
-    : Straff
+  m_text: ': Movement
 
     : Look
 
@@ -6600,8 +6598,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 29
+  m_fontSizeBase: 29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6656,7 +6654,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50138
+  m_Name: pb_Mesh-112716
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2

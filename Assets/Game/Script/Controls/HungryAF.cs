@@ -15,6 +15,7 @@ namespace Control {
         private GameManager gameManager;
         private Follow follow;
         [SerializeField] private float moveSpeed = 1;
+        [SerializeField] private float moveSpeedIncrease = 0.2f;
         [SerializeField] private float baconAte = 0;
         [SerializeField] private float eatWaitTime = 1;
         [SerializeField] private float eatTimer = 0;
@@ -70,7 +71,7 @@ namespace Control {
             {
                 player.GetComponent<CloneFollower>().DestroyFollowers(baconBeingAte);
                 baconAte++;
-                moveSpeed = moveSpeed * (baconAte / moveSpeed) + Time.deltaTime;
+                moveSpeed = moveSpeed + moveSpeedIncrease;
                 eatTimer = 0;
                 isEating = false;
                 gameManager.DecreaseClonesFollowing();

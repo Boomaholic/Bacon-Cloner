@@ -9,23 +9,23 @@ namespace Core
         
         [SerializeField] GameObject piggie;
         [SerializeField] GameObject hungryDude;
-        GameManager gameManager;
+        [SerializeField] int hungrySpawnlimit = 5;
         private bool enemyHasSpawned = false;
+        GameManager gameManager;
         private Vector3 checkSpawnLocation;
         private Vector3 newSpawnLocation;
         private Vector3 oldSpawnLocation;
-        private BoxCollider collider;
+        private BoxCollider boxCollider;
 
 
         private void Awake()
         {
             gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-            collider = GetComponent<BoxCollider>();
+            boxCollider = GetComponent<BoxCollider>();
         }
 
         private void Update()
         {
-            
             
             //spawn piggies over time
             if (gameManager.PigSpawnTimer() && !gameManager.PiggieSpawnAtMax())
@@ -35,7 +35,7 @@ namespace Core
             }
             
             //spawn Hungry Dude when ready
-            if (gameManager.GetTotalClonesPickedUp() >= 5 && !enemyHasSpawned)
+            if (gameManager.GetTotalFollowers() >= hungrySpawnlimit && !enemyHasSpawned)
             {
                 Spawn(hungryDude);
                 enemyHasSpawned = true;
@@ -73,13 +73,13 @@ namespace Core
         //Spawns assigned GameObject in location if location occupied check is false
         private void Spawn(GameObject gameObject)
         {
-            collider.enabled = false;
+            boxCollider.enabled = false;
             GetSpawnLocation();
             if (!SpawnOccupied() && newSpawnLocation != oldSpawnLocation)
             {
                 Instantiate(gameObject, newSpawnLocation, Quaternion.Euler(0, Random.Range(0, 259), 0));
                 oldSpawnLocation = newSpawnLocation;
-                collider.enabled = true;
+                boxCollider.enabled = true;
             }
             
         }

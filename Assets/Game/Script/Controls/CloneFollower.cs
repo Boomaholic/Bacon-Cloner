@@ -2,26 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Core;
+using Movement;
 
 namespace Control
 {
     public class CloneFollower : MonoBehaviour
     {
         [SerializeField] int index = 0;
-        [SerializeField] float cloneSpeed = 0;
-        [SerializeField] float gap = 1;
+        [SerializeField] float cloneSpeed = 10;
+        [SerializeField] float gap = 3;
 
         [SerializeField] Transform clonePrefab;
 
-        [SerializeField] private List<Transform> Followers = new List<Transform>();
+        [SerializeField] public List<Transform> Followers = new List<Transform>();
 
         private GameManager gameManager;
+        //private Follow follow;
         public GameObject lastClone;
+        
+        
 
         private void Awake()
         {
             gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-            
+            //follow = GetComponent<Follow>();
             Followers.Add(this.transform);
             lastClone = Followers[0].gameObject;
         }
@@ -31,6 +35,8 @@ namespace Control
             CloneMovement();
         }
 
+
+        //Clone movement 
         private void CloneMovement()
         {
             for (int i = Followers.Count - 1; i > 0; i--)
@@ -40,9 +46,9 @@ namespace Control
                 float distance = Vector3.Distance(clone.position, previousClone.position);
                 if (distance > gap)
                 {
-                    cloneSpeed = (distance / gap);
+                    cloneSpeed = (distance + gap) * 2;
                     clone.LookAt(Followers[i - 1]);
-                    clone.position = Vector3.MoveTowards(clone.position, previousClone.position, cloneSpeed);
+                    clone.position = Vector3.MoveTowards(clone.position, previousClone.position, cloneSpeed * Time.deltaTime);
                 }
                 else if (distance <= gap)
                 {
@@ -50,6 +56,7 @@ namespace Control
                 }
             }
         }
+
         public bool FollowersIncreased()
         {
             return Followers.Count > index;

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5390126046551061794}
-  - component: {fileID: -3408113606323808262}
   - component: {fileID: 1715423070833502886}
   m_Layer: 0
   m_Name: Bacon Clone
@@ -34,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3408113606323808262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291787451997116048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be07d541a8ad1134c99c57c551723a8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRange: 0
 --- !u!65 &1715423070833502886
 BoxCollider:
   m_ObjectHideFlags: 0

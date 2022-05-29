@@ -75,7 +75,6 @@ namespace Core
         {
             piggiesEntered++;
             clonesBeingMade = clonesBeingMade + piggieToCloneRatio;
-            PiggieDestroyed();
         }
 
         public void PiggieDestroyed()

@@ -9,6 +9,7 @@ namespace Control
         [SerializeField] GameObject gameOverUI;
         private bool isGameOver = false;
 
+
         private void OnDestroy()
         {
             GameOverHappened();

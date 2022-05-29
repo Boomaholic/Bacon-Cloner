@@ -8,7 +8,6 @@ namespace Movement
     {
         [SerializeField] float chaseRange = 5f;
 
-
         public bool InRangeOfPlayer(GameObject other)
         {
             return DistanceToObject(other) <= chaseRange;
