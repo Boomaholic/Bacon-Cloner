@@ -1,6 +1,6 @@
 This Document lists all changes made to the Starter Assets First Person Controller
-
-FileChanged:
+//
+//FileChanged:
 FirstPersonCOntroller.cs 
   @line 77-78
       private PauseMenuAccess _menuAccess;
