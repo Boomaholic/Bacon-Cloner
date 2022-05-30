@@ -15,4 +15,5 @@ Starter Assets First Person Controller*
 
 AllSky Free - 10 Sky / Skybox Set
     https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014#description
+
 see ControllerModifications.md see the changes made to Asset pack.
