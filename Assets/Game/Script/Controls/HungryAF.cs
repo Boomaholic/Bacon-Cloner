@@ -14,27 +14,31 @@ namespace Control {
         private GameObject player;
         private GameManager gameManager;
         private Follow follow;
+        private float eatTimer = 0;
+        private bool isEating = false;
+
+        [Header("Hungry Basic settings")]
         [SerializeField] private float moveSpeed = 1;
         [SerializeField] private float moveSpeedIncrease = 0.2f;
         [SerializeField] private float baconAte = 0;
         [SerializeField] private float eatWaitTime = 1;
-        [SerializeField] private float eatTimer = 0;
-
-
-
-        private bool isEating = false;
 
         private void Awake()
         {
-            Debug.Log("mmmmm Bacon");
             player = GameObject.FindWithTag("Player");
             gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
             follow = GetComponent<Follow>();
-        }
 
+            
+        }
 
         private void Update()
         {
+            //if eating, stop and eat
+            if (isEating)
+            {
+                StopAndEat();
+            }
 
             //if not eating, constantly get Last Clone in Followers.
             //and Follow that Game Object
@@ -43,11 +47,8 @@ namespace Control {
                 baconClone = player.GetComponent<CloneFollower>().GetLastClone();
                 FollowPlayer();
             }
-            //if eating, stop and eat
-            if (isEating)
-            {
-                StopAndEat();
-            }
+            
+            
         }
 
         //following the Last Clone
@@ -65,15 +66,16 @@ namespace Control {
             //changes baconclone to different variable so it doesnt get Overwritten
             eatTimer += Time.deltaTime;
             baconBeingAte = baconClone;
+            
 
             //if eat time reached
             if (eatTimer >= eatWaitTime)
             {
-                player.GetComponent<CloneFollower>().DestroyFollowers(baconBeingAte);
                 baconAte++;
                 moveSpeed = moveSpeed + moveSpeedIncrease;
                 eatTimer = 0;
                 isEating = false;
+                player.GetComponent<CloneFollower>().DestroyFollowers(baconBeingAte);
                 gameManager.DecreaseClonesFollowing();
             }
 
@@ -86,6 +88,7 @@ namespace Control {
             if (other.gameObject == baconClone)
             {
                 isEating = true;
+                AudioManager.instance.EatSFX();
             }
         }
     }

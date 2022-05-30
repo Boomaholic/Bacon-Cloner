@@ -38,6 +38,7 @@ namespace Core
             if (gameManager.GetTotalFollowers() >= hungrySpawnlimit && !enemyHasSpawned)
             {
                 Spawn(hungryDude);
+                AudioManager.instance.ISpawnedSFX();
                 enemyHasSpawned = true;
             }
         }

@@ -14,8 +14,6 @@ namespace Control
         [SerializeField] BoxCollider boxCollider;
 
 
-
-
         private void Awake()
         {
             gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
@@ -33,14 +31,12 @@ namespace Control
                 other.GetComponent<Follow>().InRangeOfPlayer(GameObject.FindWithTag("Player")))
             {
                 gameManager.OnPigDropOffTrigger();
-                
+
+                //Added Audio trigger
+                AudioManager.instance.CloningSFX();
+
                 Destroy(other.gameObject);
             }
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            
         }
 
         //Called by Unity
